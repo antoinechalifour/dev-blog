@@ -1,6 +1,10 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+[![Build Status](https://travis-ci.com/antoinechalifour/dev-blog.svg?token=ezaxPRpCmUHLfvv9BqPZ&branch=master)](https://travis-ci.com/antoinechalifour/dev-blog)
+
+> This is the source code for my dev blog.
 
 ## Getting Started
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 First, run the development server:
 
