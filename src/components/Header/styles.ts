@@ -5,13 +5,12 @@ export const HeaderLayout = styled.header`
   position: sticky;
   top: 0;
   border-bottom: 2px solid var(--border-color);
+  padding: 0 2rem;
 
   background: var(--header-background-color);
 
   > nav {
     ${centeredBlock};
-
-    padding: 0 2rem;
     display: grid;
     grid-template-columns: 40px 1fr;
     align-items: center;
