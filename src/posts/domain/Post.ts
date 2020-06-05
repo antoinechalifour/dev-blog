@@ -10,4 +10,5 @@ export interface Post {
   author: Author;
   publishDate: string;
   tags: string[];
+  readingTimeInMinutes: number;
 }

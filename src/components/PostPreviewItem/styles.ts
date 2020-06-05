@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { HStack } from "@/ui/HStack";
 
 export const PostPreviewLayout = styled.article`
   a {
@@ -12,7 +13,7 @@ export const PostPreviewLayout = styled.article`
   }
 `;
 
-export const PublicationDate = styled.p`
+export const PostInfo = styled(HStack)`
   font-size: 1.2rem;
   color: var(--text-color-hint);
 `;

@@ -6,7 +6,7 @@ import { TagList } from "@/components/Tags/Tags";
 import { PostPreview } from "@/posts/domain/PostPreview";
 import { VStack } from "@/ui/VStack";
 
-import { PostPreviewLayout, PublicationDate } from "./styles";
+import { PostPreviewLayout, PostInfo } from "./styles";
 
 interface PostPreviewItemProps {
   postPreview: PostPreview;
@@ -23,9 +23,16 @@ export const PostPreviewItem: React.FC<PostPreviewItemProps> = ({
         </a>
       </Link>
 
-      <PublicationDate>
-        Publié le {formatDate(new Date(postPreview.publishDate), "dd/MM/yyyy")}
-      </PublicationDate>
+      <PostInfo>
+        <p>
+          Publié le{" "}
+          {formatDate(new Date(postPreview.publishDate), "dd/MM/yyyy")}
+        </p>
+
+        <span>•</span>
+
+        <p>Temps de lecture: {postPreview.readingTimeInMinutes}mn</p>
+      </PostInfo>
 
       <p>{postPreview.description}</p>
 

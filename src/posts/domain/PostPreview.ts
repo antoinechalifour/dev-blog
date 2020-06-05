@@ -7,4 +7,5 @@ export interface PostPreview {
   author: Author;
   publishDate: string;
   tags: string[];
+  readingTimeInMinutes: number;
 }
