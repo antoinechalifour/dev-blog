@@ -4,7 +4,7 @@ import { HStack } from "@/ui/HStack";
 
 import { FooterLayout } from "./styles";
 
-export const Footer: React.FC<FooterProps> = () => (
+export const Footer: React.FC = () => (
   <FooterLayout>
     <HStack as="ul">
       <li>

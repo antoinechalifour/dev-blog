@@ -18,6 +18,7 @@
     "react-syntax-highlighter": "^12.2.1",
     "reading-time": "^1.2.0",
     "reset.css": "^2.0.2",
+    "string-to-color": "^2.1.4",
     "styled-components": "^5.1.0"
   },
   "devDependencies": {

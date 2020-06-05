@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/antoinechalifour/dev-blog.svg?token=ezaxPRpCmUHLfvv9BqPZ&branch=master)](https://travis-ci.com/antoinechalifour/dev-blog)
+[![Build Status](https://travis-ci.com/antoinechalifour/dev-blog.svg?token=ezaxPRpCmUHLfvv9BqPZ&branch=master)](https://travis-ci.com/antoinechalifour/dev-blog) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 > This is the source code for my dev blog.
 
