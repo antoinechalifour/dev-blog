@@ -21,6 +21,7 @@ export class PostRepository {
   async fetchAllPreviews(): Promise<PostPreview[]> {
     const response = await this.client.getEntries<ContentfulPost>({
       content_type: "blogPost",
+      order: "-fields.publishDate",
     });
 
     return response.items.map((entry) => toPostPreview(entry.fields));
