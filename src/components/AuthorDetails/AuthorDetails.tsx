@@ -1,6 +1,7 @@
 import React from "react";
 
 import { AuthorLayout } from "@/components/AuthorDetails/styles";
+import { DarkModeSwitch } from "@/components/DarkModeSwitch/DarkModeSwitch";
 
 interface AuthorDetailsProps {
   name: string;
@@ -17,6 +18,7 @@ export const AuthorDetails: React.FC<AuthorDetailsProps> = ({
 }) => (
   <AuthorLayout>
     <img src={imageUrl} alt={name} />
+
     <h1>{name}</h1>
 
     <dl>
