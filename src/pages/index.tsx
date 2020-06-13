@@ -17,7 +17,7 @@ interface HomePageProps {
 const HomePage: React.FC<HomePageProps> = ({ postPreviews, author }) => (
   <>
     <Head>
-      <title>Antoine Chalifour | Blog</title>
+      <title>Blog | Antoine Chalifour</title>
     </Head>
 
     <AuthorDetails

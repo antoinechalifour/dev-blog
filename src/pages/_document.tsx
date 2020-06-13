@@ -2,6 +2,10 @@ import Document, { Head, Html, Main, NextScript } from "next/document";
 import React from "react";
 import { ServerStyleSheet } from "styled-components";
 
+const BLOG_TITLE = "Blog | Antoine Chalifour";
+const BLOG_DESCRIPTION =
+  "Contenu tech par Antoine Chalifour : réflexions sur le développement Web et les bonnes pratiques";
+
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: any) {
     const sheet = new ServerStyleSheet();
@@ -34,6 +38,16 @@ export default class MyDocument extends Document {
     return (
       <Html lang="fr">
         <Head>
+          <meta name="robots" content="index, follow" />
+          <meta name="description" content={BLOG_DESCRIPTION} />
+          <meta property="og:url" content="https://blog.antoinechalifour.dev" />
+          <meta property="og:title" content={BLOG_TITLE} />
+          <meta property="og:description" content={BLOG_DESCRIPTION} />
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:creator" content="@Antoine_Chlfr" />
+          <meta name="twitter:title" content={BLOG_TITLE} />
+          <meta name="twitter:description" content={BLOG_DESCRIPTION} />
+
           {process.env.GA_TRACKING_ID && (
             <>
               <script
