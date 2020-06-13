@@ -7,6 +7,7 @@ export const LabelLayout = styled.label`
   align-items: center;
   cursor: pointer;
 
+  span:last-child,
   input {
     position: absolute !important;
     height: 1px;
@@ -14,6 +15,17 @@ export const LabelLayout = styled.label`
     overflow: hidden;
     clip: rect(1px, 1px, 1px, 1px);
     white-space: nowrap; /* added line */
+  }
+
+  @media (min-width: 800px) {
+    span:last-child {
+      position: static !important;
+      height: auto;
+      width: auto;
+      overflow: visible;
+      clip: initial;
+      white-space: initial;
+    }
   }
 
   input + span {
