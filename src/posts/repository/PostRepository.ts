@@ -9,8 +9,9 @@ import { toPost, toPostPreview } from "./mappers";
 export class PostRepository {
   protected constructor(private client: ContentfulClientApi) {}
 
-  static create(spaceId: string, accessToken: string) {
+  static create(host: string, spaceId: string, accessToken: string) {
     const client = createClient({
+      host,
       space: spaceId,
       accessToken,
     });

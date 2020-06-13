@@ -20,8 +20,8 @@ const GlobalStyle = createGlobalStyle`
   
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 1.6;
+    font-size: 1.7rem;
+    line-height: 1.8;
     
     background: var(--background-color);
     color: var(--text-color);
@@ -37,7 +37,7 @@ const GlobalStyle = createGlobalStyle`
     --header-background-color: #171717;
     --footer-background-color: #171717;
     --link-color: #fe845f;
-    --code-background-color: #101010;
+    --code-background-color: #414141;
     --switch-border-color: #ddd;
     --switch-handle-color: #ddd;
   }

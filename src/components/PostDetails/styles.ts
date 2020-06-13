@@ -57,11 +57,18 @@ export const PostContent = styled.div`
   pre,
   img {
     display: block;
-    width: 90%;
     margin: 3rem auto;
     border-radius: 0.4rem;
 
     overflow: hidden;
+  }
+
+  pre {
+    width: 90%;
+  }
+
+  img {
+    max-width: 90%;
   }
 
   ul {
@@ -79,9 +86,10 @@ export const PostContent = styled.div`
     overflow-x: auto;
   }
 
+  li > code,
   p > code {
     font-family: monospace;
-    font-size: 1.9rem;
+    font-size: 2rem;
     padding: 0 0.3rem;
     background: var(--code-background-color);
   }

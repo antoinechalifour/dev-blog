@@ -28,6 +28,7 @@ const PostPage: React.FC<PostPageProps> = ({ post }) => {
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const repository = PostRepository.create(
+    process.env.CONTENTFUL_HOST!,
     process.env.CONTENTFUL_SPACE_ID!,
     process.env.CONTENTFUL_ACCESS_TOKEN!
   );
@@ -49,6 +50,7 @@ export const getStaticProps: GetStaticProps<
   { slug: string }
 > = async ({ params }) => {
   const repository = PostRepository.create(
+    process.env.CONTENTFUL_HOST!,
     process.env.CONTENTFUL_SPACE_ID!,
     process.env.CONTENTFUL_ACCESS_TOKEN!
   );

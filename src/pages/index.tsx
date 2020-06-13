@@ -33,10 +33,12 @@ const HomePage: React.FC<HomePageProps> = ({ postPreviews, author }) => (
 
 export const getStaticProps: GetStaticProps<HomePageProps> = async () => {
   const postRepository = PostRepository.create(
+    process.env.CONTENTFUL_HOST!,
     process.env.CONTENTFUL_SPACE_ID!,
     process.env.CONTENTFUL_ACCESS_TOKEN!
   );
   const authorRepository = AuthorRepository.create(
+    process.env.CONTENTFUL_HOST!,
     process.env.CONTENTFUL_SPACE_ID!,
     process.env.CONTENTFUL_ACCESS_TOKEN!
   );
